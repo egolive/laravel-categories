@@ -22,7 +22,7 @@ class CreateCategoriesTable extends Migration
             $table->string('slug');
             $table->{$this->jsonable()}('name');
             $table->{$this->jsonable()}('description')->nullable();
-            $table->string('img_url');
+            $table->string('img_url')->nullable();
             NestedSet::columns($table);
             $table->timestamps();
             $table->softDeletes();
