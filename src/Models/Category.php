@@ -15,6 +15,7 @@ use Rinvex\Support\Traits\ValidatingTrait;
 use Rinvex\Categories\Events\CategorySaved;
 use Rinvex\Categories\Events\CategoryDeleted;
 use Illuminate\Database\Eloquent\Relations\MorphToMany;
+use App\Traits\SortableTrait;
 
 /**
  * Rinvex\Categories\Models\Category.
@@ -50,6 +51,7 @@ class Category extends Model
     use HasTranslations;
     use HasTranslatableSlug;
     use ValidatingTrait;
+    use SortableTrait;
 
     /**
      * {@inheritdoc}
