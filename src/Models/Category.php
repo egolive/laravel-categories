@@ -50,6 +50,7 @@ class Category extends Model
     use HasTranslations;
     use HasTranslatableSlug;
     use ValidatingTrait;
+    use SortableTrait;
 
     /**
      * {@inheritdoc}
